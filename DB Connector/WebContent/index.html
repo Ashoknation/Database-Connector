@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+body { background-image: url('zsee.jpg');} 
+
+input[type=text], input[type=password] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.container {
+  padding: 16px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<h2><p align="center">DATABASE LOGIN PAGE</p></h2>
+<p>For MySQL Driver : "com.mysql.jdbc.Driver"</p>
+<p>For MySQL Connection Url : jdbc:mysql://localhost:3306/ashok</p>
+<p>Enter your database username and password</p>
+
+<form action="login1" method="post">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required style="width: 299px; background-color: Aqua">
+</div>
+<div class="container">
+    <label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required style="background-color: Aqua">
+   </div> 
+   <div class="container">
+     <label for="driver"><b>Load Driver</b></label>
+    <input type="text" placeholder="Enter Driver" name="driver" required style="background-color: Aqua; ">
+    </div>
+    <div class="container" style="width: 1044px; ">
+    <label for="url"><b>Connection Url</b></label>
+    <input type="text" placeholder="Enter Connection Url" name="url" required style="background-color: Aqua; ">
+  </div>      
+    <button type="submit" style="width: 443px; ">Login</button>
+  </div>
+</form>
+
+</body>
+</html>
